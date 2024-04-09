@@ -1,0 +1,208 @@
+:root {
+	/* Theme Colors */
+	--theme-primary: #5865F2;
+	--theme-primary-hover: #3C46BC;
+	--theme-on-primary: hsl(0, 0%, 100%);
+
+	--theme-bg: #181b23;
+	--theme-on-bg: #ABB2FF;
+
+	--theme-surface-1: #3E47A5;
+	--theme-on-surface-1: #ABB2FF;
+
+	--theme-surface-2: #6a4d34;
+	--theme-on-surface-2: #ffffff;
+
+	--theme-button-border-radius: 0.5rem;
+
+	/* Theme Shapes */
+	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
+	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
+	--theme-button-border-radius: 0.5rem;
+
+	/* Theme Transition */
+	--theme-transition: 0.2s ease-in-out;
+
+	/* Theme Layout */
+	--section-margin: 3rem;
+	--theme-grid-gap: 1rem;
+	--container-max-width: 1440px;
+	--container-max-width-narrow: 960px;
+	--container-padding: 0 1rem;
+
+	--theme-blog-post-header-width: 1200px;
+
+	/* Theme Fonts */
+	--theme-font-family-sans-1: 'Open Sans', Georgia, Cambria, 'Times New Roman',
+		Times, serif;
+	--theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
+		sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: var(--theme-bg);
+	position: relative;
+}
+
+:root {
+	touch-action: pan-x pan-y;
+	height: 100%;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* A elements should be color inherit */
+a {
+	color: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+:root {
+	--font-size-sm: clamp(14.4px, 0.07vw + 14.13px, 15px);
+	--font-size-base: clamp(18px, 0.23vw + 17.09px, 20px);
+	--font-size-md: clamp(22.5px, 0.47vw + 20.61px, 26.66px);
+	--font-size-lg: clamp(28.13px, 0.84vw + 24.76px, 35.54px);
+	--font-size-xl: clamp(35.16px, 1.39vw + 29.6px, 47.37px);
+	--font-size-xxl: clamp(43.95px, 2.18vw + 35.22px, 63.15px);
+	--font-size-xxxl: clamp(54.93px, 3.32vw + 41.64px, 84.17px);
+}
+
+html,
+body {
+	line-height: 1.5;
+	font-family: var(--theme-font-family-sans);
+	font-size: var(--font-size-base);
+	color: var(--theme-on-bg);
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--theme-font-family-sans-1);
+	font-weight: 700;
+}
+
+h1 {
+	font-size: var(--font-size-xxl);
+}
+
+h2 {
+	font-size: var(--font-size-xl);
+}
+
+h3 {
+	font-size: var(--font-size-lg);
+}
+
+h1,
+h2 {
+	line-height: 1.1;
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+h6 {
+	font-size: var(--font-size-sm);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0 0 1rem 0;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: var(--font-size-base);
+	font-weight: 500;
+	margin-bottom: 1rem;
+	padding-left: 1.5rem;
+	border-left: 0.25rem solid var(--theme-on-bg);
+}
