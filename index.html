@@ -34,11 +34,7 @@
 
 <script async src="../www.googletagmanager.com/gtag/jsc182?id=G-H4XYJXCZ15"></script>
 
-
-	<link rel="stylesheet" href="assets/privacy.dc85d218.css" />
-<link rel="stylesheet" href="assets/index.5dd55695.css" />
-<link rel="stylesheet" href="assets/index.2f9d8a08.css" /><script type="module" src="hoisted.64072919.js"></script></head>
-<style>
+<style> 
 	/* Animation for the plushie image */
 	@keyframes bounce {
 		0%, 100% { transform: translateY(0); }
@@ -50,6 +46,106 @@
 	}
 </style>
 <body>
+		<a href="#content" class="astro-IJ7SRSHX">Skip to main content</a>
+
+
+		<style>
+			/* Cookie Banner CSS */
+			#cookie-banner {
+position: fixed;
+bottom: 100px;
+right: 840px; /* Initially hidden off-screen */
+width: -840px;
+background-color: #5865F2;
+padding: 10px;
+text-align: center;
+border-radius: 10px;
+box-shadow: 0 2px 5px hsla(224, 74%, 21%, 0.151);
+transition: right 0.5s ease; /* Smooth transition */
+z-index: 9999;
+
+}
+		
+#cookie-banner p {
+ margin: 0;
+line-height: 1.5;
+white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+		
+			
+	#cookie-banner {
+      position: fixed;
+	  bottom: 20px;      
+	  right: -240px; /* Initially hidden off-screen */
+      width: 205px;
+      background-color: #5865F2;
+      padding: 4.9px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px hsla(224, 100%, 15%, 0.24);
+      transition: right 0.5s ease; /* Smooth transition */
+      z-index: 9999;
+			}
+			#accept-cookies {
+      background-color: #57F287;
+      color: #181b23;
+      border: none;
+      padding: 5px 10px;
+	  font-weight: 900;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s; /* Smooth transition for background-color */
+    }
+		
+			/* Hover effect for the "Yes" button */
+			#accept-cookies:hover {
+			  background-color: #ff373a; /* Change background color on hover */
+			}
+		
+			/* Show cookie banner animation */
+			#cookie-banner.show {
+				right: 20px; /* Show banner by moving from left to right */
+			}
+		  </style>
+		</head>
+		<body>
+		  <!-- Cookie Banner HTML -->
+		  <div id="cookie-banner">
+			<p>do you love wumpus?</p>
+			<button id="accept-cookies">close</button>
+		  </div>
+		
+		  <!-- Your existing HTML code goes here -->
+		
+		  <script>
+    // Function to show the cookie banner if not accepted
+    function showCookieBanner() {
+      const cookieBanner = document.getElementById('cookie-banner');
+      if (!localStorage.getItem('cookiesAccepted')) {
+        cookieBanner.classList.add('show'); // Add 'show' class to display banner with animation
+      }
+    }
+
+    // Function to handle cookie acceptance
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').classList.remove('show'); // Hide banner when cookies are accepted
+    }
+
+    // Call the function when the page loads
+    window.onload = showCookieBanner;
+
+    // Add event listener to the accept button
+    document.getElementById('accept-cookies').addEventListener('click', acceptCookies);
+  </script>
+
+	<link rel="stylesheet" href="assets/privacy.dc85d218.css" />
+<link rel="stylesheet" href="assets/index.5dd55695.css" />
+<link rel="stylesheet" href="assets/index.2f9d8a08.css" /><script type="module" src="hoisted.64072919.js"></script></head>
+	<body>
 		<a href="#content" class="astro-IJ7SRSHX">Skip to main content</a>
 
 
@@ -116,7 +212,11 @@
 								</li>
 						</ul>
 					</nav>
-		
+					<div id="cookie-banner" style="display: none;">
+						<p>This website uses cookies to ensure you get the best experience on our website.</p>
+						<button id="accept-cookies">Accept</button>
+					  </div>
+					  
 	</div>
 	<div class="header-action-item__container astro-ACFW7NQY">
 		
@@ -148,7 +248,7 @@
 <div class="content__container  astro-7MKW45JB">
   <section class="hero-section__section astro-7LRDOQDS">
 		<div class="hero-section__text astro-7LRDOQDS">
-			<h1 class="astro-7LRDOQDS">Wampas Bot!</h1>
+			<h1 class="astro-7LRDOQDS">Coming Soon!</h1>
 			<p class="astro-7LRDOQDS">This page is still under construction</p>
 			<div class="hero-btns__container astro-7LRDOQDS">
 				
