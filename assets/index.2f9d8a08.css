@@ -68,3 +68,91 @@ button:where(.astro-3B2PDG42).btn {
 ::-webkit-scrollbar-track {
     background-color: #2d305f; /* Track color */
 }
+::selection {
+    background-color: #6169c2;
+    color: white; /* Change the text color to make it visible on the green background */
+  }
+
+  /* styles.css */
+/* styles.css */
+
+/* Colors */
+:root {
+    --pink: #ff73fa;
+    --yellow: #ffd836;
+    --green: #51bc9d;
+    --orange: #ff9a15;
+    --blue: #aec7ff;
+    --darkblue: #3e70dd;
+  }
+  
+  /* Confetti Styles */
+  .confetti-container {
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .confetti {
+    position: absolute;
+    animation: fall 4s ease-out;
+  }
+  
+  @keyframes fall {
+    0% { transform: translateY(-100vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(720deg); }
+  }
+  
+  /* Star */
+  .star {
+    width: 10px;
+    height: 10px;
+    background-color: var(--pink);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  
+  /* Moon */
+  .moon {
+    width: 10px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+  }
+  
+  /* Triangle */
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid var(--green);
+  }
+  
+  /* Circle */
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: var(--orange);
+    border-radius: 50%;
+  }
+  
+  /* Hexagon */
+  .hexagon {
+    width: 10px;
+    height: 10px;
+    background-color: var(--blue);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  
+  /* Dark Blue Circle */
+  .darkblue-circle {
+    width: 10px;
+    height: 10px;
+    background-color: var(--darkblue);
+    border-radius: 50%;
+  }
+  

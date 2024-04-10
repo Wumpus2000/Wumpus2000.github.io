@@ -3,31 +3,33 @@
 	
 <head>
 
-	<meta content="#5865F2" name="theme-color">
-	<meta content="#5865F2" property="theme-color">
-	<meta charset="utf-8"/><title>Wampas | Discord Bot</title>
-	<meta content="A powerful Discord bot to create music quizzes and play with friends." name="description"/>
-	<meta content="width=device-width, initial-scale=1" name="viewport"/> 
-	<meta content ="Wampas" name="author">
-	<link rel="icon" type="image/png" href="/favicon.png">
-	<meta content="thumbnail, initial-scale=1" name="viewport"/> 
-	<link content="https://i.ibb.co/4jytVCs/g-copy.png" property="thumbnail">
-	<link content="https://i.ibb.co/4jytVCs/g-copy.png" property="og:thumbnail">
+<!-- HTML Meta Tags -->
+<title>Wampas | Discord Bot</title>
+<meta name="description" content="A powerful Discord bot to create music quizzes and play with friends.">
 
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Wampas | Discord Bot">
+<meta itemprop="description" content="A powerful Discord bot to create music quizzes and play with friends.">
+<meta itemprop="image" content="http://i.ibb.co/4jytVCs/g-copy.png">
+<meta itemprop="theme-color"content="#5865F2">
 
- <!--og-->
-	<meta content="Wampas | Discord Bot" property="og:title"/>
-	<meta content="A powerful Discord bot to create music quizzes and play with friends." property="og:description"/>
-	<meta content="https://i.ibb.co/4jytVCs/g-copy.png" property="og:image"/>
-	<meta property="og:type" content="website"/>
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://wumpus.is-a.dev">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wampas | Discord Bot">
+<meta property="og:description" content="A powerful Discord bot to create music quizzes and play with friends.">
+<meta property="og:image" content="http://i.ibb.co/4jytVCs/g-copy.png">
+<meta property="theme-color"content="#5865F2">
 
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wampas | Discord Bot">
+<meta name="twitter:description" content="A powerful Discord bot to create music quizzes and play with friends.">
+<meta name="twitter:image" content="http://i.ibb.co/4jytVCs/g-copy.png">
+<meta name="theme-color"content="#5865F2">
 
- <!--twitter-->
-	<meta content ="Wampas" property="twitter:author">
-	<meta content="summary_large_image" name="twitter:card"/>
-	<meta content="Wampas | Discord Bot" property="twitter:title"/>
-	<meta content="https://i.ibb.co/4jytVCs/g-copy.png" property="twitter:image"/>
-	<meta content="A powerful Discord bot to create music quizzes and play with friends." property="twitter:description"/>
+<!-- Meta Tags Generated via http://heymeta.com -->
+<meta content="A powerful Discord bot to create music quizzes and play with friends." property="twitter:description"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="../fonts.googleapis.com/index.html">
@@ -57,7 +59,6 @@
 </style>
 <body>
 		<a href="#content" class="astro-IJ7SRSHX">Skip to main content</a>
-
 
 		<style>
 			/* Cookie Banner CSS */
@@ -95,7 +96,7 @@
 			  transition: background-color 0.3s; /* Smooth transition for background-color */
 			  margin: 5px;
 			}
-
+		
 			#yes-cookies {
 			  background-color: #57F287;
 			  color: #ffffff;
@@ -122,7 +123,7 @@
 			  color: #329451;
 			  /* Change background color on hover */
 			}
-
+		
 			/* Show cookie banner animation */
 			#cookie-banner.show {
 			  right: 20px; /* Show banner by moving from left to right */
@@ -150,8 +151,10 @@
 		
 		  // Function to handle cookie consent
 		  function handleConsent(consent) {
-			localStorage.setItem('cookiesConsented', consent);
-			document.getElementById('cookie-banner').classList.remove('show'); // Hide banner when cookies are consented
+			if (consent === 'true') {
+			  localStorage.setItem('cookiesConsented', 'true');
+			}
+			document.getElementById('cookie-banner').classList.remove('show'); // Hide banner regardless of consent
 		  }
 		
 		  // Call the function when the page loads
@@ -168,7 +171,16 @@
 	<body>
 		<a href="#content" class="astro-IJ7SRSHX">Skip to main content</a>
 
-
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Confetti Effect</title>
+			<link rel="stylesheet" href="styles.css">
+		  </head>
+		  <body>
+			<div class="confetti-container"></div>
+			<script src="script.js"></script>
+		  </body>
 		
 		<script type="module">
 	const bodyElement = document.querySelector('body');
@@ -237,8 +249,7 @@
 	</div>
 	<div class="header-action-item__container astro-ACFW7NQY">
 		
-
-<a class="btn undefined undefined undefined astro-3B2PDG42" href="/invite">
+		<a class="btn undefined undefined undefined astro-3B2PDG42" href="/invite">
 			Get Started
 			
 		</a>
@@ -269,14 +280,14 @@
 			<p class="astro-7LRDOQDS">This page is still under construction</p>
 			<div class="hero-btns__container astro-7LRDOQDS">
 				
-
-<a class="btn undefined undefined undefined astro-3B2PDG42" href="/invite">
-			Get Started
-			<span class="material-icons astro-3B2PDG42">chevron_right</span>
-		</a>
-
-
-
+				<a class="btn undefined undefined undefined astro-3B2PDG42" href="/invite" onmouseover="showConfetti()" onmouseout="hideConfetti()">
+					Get Started
+					<span class="material-icons astro-3B2PDG42">chevron_right</span>
+				</a>
+				
+				<div class="confetti-container"></div>
+				
+				
 
 				
 
