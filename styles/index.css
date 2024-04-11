@@ -1,41 +1,40 @@
 :root {
-	/* Theme Colors */
-	--theme-primary: #5865F2;
-	--theme-primary-hover: #3C46BC;
-	--theme-on-primary: hsl(0, 0%, 100%);
+    /* Theme Colors */
+    --theme-primary: #5865F2;
+    --theme-primary-hover: #3C46BC;
+    --theme-on-primary: hsl(0, 0%, 100%);
 
-	--theme-bg: #181b23;
-	--theme-on-bg: #ABB2FF;
+    --theme-bg: #181b23;
+    --theme-on-bg: #ABB2FF;
 
-	--theme-surface-1: #3E47A5;
-	--theme-on-surface-1: #ABB2FF;
+    --theme-surface-1: #3E47A5;
+    --theme-on-surface-1: #ABB2FF;
 
-	--theme-surface-2: #6a4d34;
-	--theme-on-surface-2: #ffffff;
+    --theme-surface-2: #6a4d34;
+    --theme-on-surface-2: #ffffff;
 
-	--theme-button-border-radius: 0.5rem;
+    --theme-button-border-radius: 0.5rem;
 
-	/* Theme Shapes */
-	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
-	--theme-button-border-radius: 0.5rem;
+    /* Theme Shapes */
+    --theme-shape-radius: clamp(1rem, 2rem, 3rem);
 
-	/* Theme Transition */
-	--theme-transition: 0.2s ease-in-out;
+    /* Theme Transition */
+    --theme-transition: 0.2s ease-in-out;
 
-	/* Theme Layout */
-	--section-margin: 3rem;
-	--theme-grid-gap: 1rem;
-	--container-max-width: 1440px;
-	--container-max-width-narrow: 960px;
-	--container-padding: 0 1rem;
+    /* Theme Layout */
+    --section-margin: 3rem;
+    --theme-grid-gap: 1rem;
+    --container-max-width: 1440px;
+    --container-max-width-narrow: 960px;
+    --container-padding: 0 1rem;
 
-	--theme-blog-post-header-width: 1200px;
+    --theme-blog-post-header-width: 1200px;
 
-	/* Theme Fonts */
-	--theme-font-family-sans-1: 'Open Sans', Georgia, Cambria, 'Times New Roman',
-		Times, serif;
-	--theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
-		sans-serif;
+    /* Theme Fonts */
+    --theme-font-family-sans-1: 'Open Sans', Georgia, Cambria, 'Times New Roman',
+        Times, serif;
+    --theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
+        sans-serif;
 }
 
 html,
