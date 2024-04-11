@@ -66,8 +66,8 @@
 		<a href="#content" class="astro-IJ7SRSHX">Skip to main content</a>
 
 		<style>
-			/* Cookie Banner CSS */
-			#cookie-banner {
+			/* wumpus Banner CSS */
+			#wumpus-banner {
 			  position: fixed;
 			  top: 520px;
 			  right: -240px; /* Initially hidden off-screen */
@@ -81,13 +81,13 @@
 			  z-index: 9999;
 			}
 		
-			#cookie-banner p {
+			#wumpus-banner p {
 			  margin: 0;
 			  line-height: 1.5;
 			  white-space: nowrap; /* Prevent text from wrapping to the next line */
 			}
 		
-			#no-cookies {
+			#no-wumpuss {
 			  background-color: #ED4245;
 			  color: #ffffff;
 			  border: none;
@@ -102,7 +102,7 @@
 			  margin: 5px;
 			}
 		
-			#yes-cookies {
+			#yes-wumpuss {
 			  background-color: #57F287;
 			  color: #ffffff;
 			  border: none;
@@ -118,56 +118,56 @@
 			}
 		
 			/* Hover effect for the buttons */
-			#yes-cookies:hover {
+			#yes-wumpuss:hover {
 			  background-color: #329451;
 			  color: #ED4245;
 			  /* Change background color on hover */
 			}
-			#no-cookies:hover {
+			#no-wumpuss:hover {
 			  background-color: #852527;
 			  color: #329451;
 			  /* Change background color on hover */
 			}
 		
-			/* Show cookie banner animation */
-			#cookie-banner.show {
+			/* Show wumpus banner animation */
+			#wumpus-banner.show {
 			  right: 20px; /* Show banner by moving from left to right */
 			}
 		  </style>
 		</head>
 		<body>
-		<!-- Cookie Banner HTML -->
-		<div id="cookie-banner">
+		<!-- wumpus Banner HTML -->
+		<div id="wumpus-banner">
 		  <p>Do you love Wumpus?</p>
-		  <button id="yes-cookies">Yes</button>
-		  <button id="no-cookies">No</button>
+		  <button id="yes-wumpuss">Yes</button>
+		  <button id="no-wumpuss">No</button>
 		</div>
 		
 		<!-- Your existing HTML code goes here -->
 		
 		<script>
-		  // Function to show the cookie banner if not consented
-		  function showCookieBanner() {
-			const cookieBanner = document.getElementById('cookie-banner');
-			if (!localStorage.getItem('cookiesConsented')) {
-			  cookieBanner.classList.add('show'); // Add 'show' class to display banner with animation
+		  // Function to show the wumpus banner if not consented
+		  function showWumpusBanner() {
+			const wumpusBanner = document.getElementById('wumpus-banner');
+			if (!localStorage.getItem('wumpussConsented')) {
+			  wumpusBanner.classList.add('show'); // Add 'show' class to display banner with animation
 			}
 		  }
 		
-		  // Function to handle cookie consent
+		  // Function to handle wumpus consent
 		  function handleConsent(consent) {
 			if (consent === 'true') {
-			  localStorage.setItem('cookiesConsented', 'true');
+			  localStorage.setItem('wumpussConsented', 'true');
 			}
-			document.getElementById('cookie-banner').classList.remove('show'); // Hide banner regardless of consent
+			document.getElementById('wumpus-banner').classList.remove('show'); // Hide banner regardless of consent
 		  }
 		
 		  // Call the function when the page loads
-		  window.onload = showCookieBanner;
+		  window.onload = showWumpusBanner;
 		
 		  // Add event listener to the buttons
-		  document.getElementById('yes-cookies').addEventListener('click', () => handleConsent('true'));
-		  document.getElementById('no-cookies').addEventListener('click', () => handleConsent('false'));
+		  document.getElementById('yes-wumpuss').addEventListener('click', () => handleConsent('true'));
+		  document.getElementById('no-wumpuss').addEventListener('click', () => handleConsent('false'));
 		</script>
 
 	<link rel="stylesheet" href="assets/privacy.dc85d218.css" />
@@ -236,7 +236,7 @@
 			<nav class="astro-ACFW7NQY">
 						<ul class="astro-ACFW7NQY">
 							<li class="astro-ACFW7NQY">
-									<a href="" class="astro-ACFW7NQY">Home</a>
+									<a href="/" class="astro-ACFW7NQY">Home</a>
 								</li><li class="astro-ACFW7NQY">
 									<a href="/commands" class="astro-ACFW7NQY">Commands</a>
 								</li><li class="astro-ACFW7NQY">
