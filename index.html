@@ -156,8 +156,31 @@
 		  <button id="no-wumpuss">No</button>
 		</div>
 		
-		<!-- Your existing HTML code goes here -->
-		
+		<style>
+			/* Additional CSS styles */
+			.footer-spotify-container {
+				display: flex;
+				justify-content: center;
+				align-items: flex-end; /* Align the container to the bottom */
+				margin-top: 50px; /* Adjust margin as needed */
+				height: 100%; /* Ensure the container takes up the full height of the footer */
+			}
+	
+			/* Adjust the padding and margin of the iframe */
+			.footer-spotify-container iframe {
+				padding: 10px;
+				margin: 55px;
+			}
+	
+			/* Smaller size for the Spotify embed on phones */
+			@media only screen and (max-width: 768px) {
+				.footer-spotify-container iframe {
+					width: 100%;
+					height: 100px; /* Adjust height as needed */
+				}
+			}
+		</style>
+
 		<script>
 		  // Function to show the wumpus banner if not consented
 		  function showWumpusBanner() {
@@ -382,9 +405,18 @@
 			<p class="astro-ZZ7RN6U6">Copyright &copy; 2024 Wampas</p>
 		</div>
 </div>
+
+	<div class="content__container  astro-7MKW45JB">
+		<div class="footer-grid__container astro-ZZ7RN6U6">
+			<!-- Your existing footer content here -->
+		</div>
+		<div class="footer-spotify-container">
+			<iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/track/3mxUMhv2K1fWhYJBlfbWPw?utm_source=generator" width="100%" height="100" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		</div>
+	</div>
 </footer>
 
-
 	</body>
+	
 </html>
 
